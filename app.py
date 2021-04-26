@@ -29,9 +29,9 @@ def predict():
     output = prediction[0]
 
     if output == 0:
-        return render_template('home.html', prediction_text= 'Breast Cancer : No')
+        return render_template('home.html', prediction_text= 'Horray!! You are safe from Breast Cancer :)')
     else:
-        return render_template('home.html', prediction_text= 'Breast Cancer : Yes')
+        return render_template('home.html', prediction_text= 'Opps!  Be careful.  There is a chance of Breast Cancer :(') 
 
 
 if __name__ == "__main__":
